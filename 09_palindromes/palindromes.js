@@ -11,14 +11,11 @@ const palindromes = function (sentence) {
     
     for (let i = 0; i < aLength; i++) {
         while (isCharacterALetter(array[endCounter]) === false) {
-            // console.log(`${array[endCounter]} is not a letter`);
             endCounter--;
         }
 
         while (isCharacterALetter(array[i]) === false) {
-            console.log(`${array[i]} is not a character so we skip it`);
             i++;
-            console.log(`${array[i]} is the next character`);
         }   
 
         
@@ -28,7 +25,7 @@ const palindromes = function (sentence) {
         else {
             endCounter--;
         }
-        }
+    }
 
     return true;
 
